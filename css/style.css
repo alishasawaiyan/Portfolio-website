@@ -1,0 +1,451 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px;
+    cursor: pointer;
+    height: 70px;
+    z-index: 100;
+}
+.heading{
+    width: 100%;
+    background-color: black;
+    display: block;
+    align-items: top;
+    height: 70px;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+}
+.nav-list{
+    width: 100%;
+    background-color: black;
+    display: block;
+    align-items: center;
+    height: 70px;
+}
+.nav-list li{
+    display: inline-block;
+    justify-content: left;
+    list-style: none;
+    padding: 26px 30px;
+    margin-right: 10px;
+    color: blueviolet;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: blueviolet;
+    size: 40px;
+    font-size: 25px;
+}
+.nav-list li a:hover{
+    color: white;
+}
+#Home{
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/xtv.png');
+    background-blend-mode: soft-light;
+}
+.box-main{
+    display: flex;
+    padding: 2% 1%;
+}
+.firstHalf{
+    max-width: 50%;
+    padding: 10%;
+}
+.buttons{
+    padding: 5% 10%;
+}
+.btn{
+    padding: 15px 40px;
+    border-color: blueviolet;
+    font-size: 25px;
+    background: none;
+    color: blueviolet;
+}
+.btn:hover{
+    color: white;
+}
+.text-big{
+    color: blueviolet;
+    font-size: 60px;
+}
+.text-small{
+    color: white;
+    font-size: 40px;
+}
+.secondHalf{
+    padding: 10%;
+    width: 50%;
+}
+.secondHalf img{
+    width: 80%;
+    border-radius: 200px;
+    display: block;
+    margin: auto;
+}
+#About{
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/bbd.png');
+    background-blend-mode: soft-light;
+}
+.About{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+.Image{
+    padding: 10%;
+    width: 50%;
+}
+.Image img{
+    width: 80%;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+.Content{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.Content li{
+    display: inline-block;
+    justify-content: left;
+    list-style: none;
+    padding: 26px 30px;
+    margin-right: 10px;
+}
+.Content li a{
+    color: white;
+    font-size: 20px;
+}
+.Content li b{
+    color: blueviolet;
+    font-size: 50px;
+}
+#Contact{
+    height: 800px;
+    background-color: black;
+}
+#Skills{
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/xtv.png');
+    background-blend-mode: soft-light;
+}
+.skill h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    height: 100%;
+    color: blueviolet;
+    font-size: 50px;
+}
+.skills-list{
+    width: 1200px;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.skills-list li{
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: calc(1200px - 150px);
+}
+meter{
+    width: calc(1200px - 150px);
+    height: 40px;
+}
+meter::-webkit-meter-bar{
+    background-color: white;
+}
+meter::-webkit-meter-optimum-value,
+meter::-webkit-meter-suboptimum-value,
+meter::-webkit-meter-even-less-good-value{
+    background-color: blueviolet;
+}
+#Projects{
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/bbd.png');
+    background-blend-mode: soft-light;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    height: 100%;
+}
+.project h2{
+    color: blueviolet;
+    font-size: 50px;
+    display: block;
+}
+.projects{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+}
+.projects .p1{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: white;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.projects .p1 .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/download\ \(2\).jpg);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.projects .p1:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.projects .p1 .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: all 0.3s ease;
+    color: white;
+}
+.projects .p1:hover .icon .fa{
+    font-size: 40px;
+}
+.projects .p1 .description{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    padding: 120px 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    opacity: 1;
+    background-color: white;
+}
+.projects .p2{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: white;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.projects .p2 .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/download\ \(3\).jpg);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.projects .p2:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.projects .p2 .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: all 0.3s ease;
+    color: white;
+}
+.projects .p2:hover .icon .fa{
+    font-size: 40px;
+}
+.projects .p2 .description{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    padding: 120px 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    opacity: 1;
+    background-color: white;
+}
+
+.projects .p3{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background: white;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.projects .p3 .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/download.png);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+.projects .p3:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.projects .p3 .icon .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: all 0.3s ease;
+    color: white;
+}
+.projects .p3:hover .icon .fa{
+    font-size: 40px;
+}
+.projects .p3 .description{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    padding: 120px 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    opacity: 1;
+    background-color: white;
+}
+.description h3{
+    margin: 0 0 10px;
+    padding: 0;
+    color: black;
+    font-size: 24px;
+}
+.description p{
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+.text{
+    text-align: center;
+    padding: 30px;
+    font-size: 35px;
+    color: white;
+}
+
+.form{
+    max-width: 500px;
+    margin: 42px auto;
+}
+
+.form-input{
+    margin: 3px 0;
+    width: 100%;
+    padding: 5px 3px;
+    font-size: 19px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: none;
+}
+.form-input::placeholder{
+    color: white;
+}
+
+.btn-ss{
+    padding: 8px 20px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 19px;
+    background: blueviolet;
+    cursor: pointer;
+    font-size: 20px; 
+}
+.btn-ss:hover{
+    color: white;
+}
+.form-input:read-write{
+    color: white;
+}
+
+.text-b{
+    text-align: center;
+    padding: 30px;
+    color: blueviolet;
+    background-color: black;
+}
+.social-button {
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.social-button .fa{
+    font-weight: 900;
+    font-size: 20px;
+}
+.social-button:hover {
+    background-color: purple;
+}
